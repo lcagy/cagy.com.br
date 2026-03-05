@@ -1,10 +1,13 @@
+============================================================
+INÍCIO DO ARQUIVO – index.html
+============================================================
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
-<title>DJ Cagy | Brasilidades</title>
+<title>Cagy | DJ & Segurança da Informação</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="DJ Cagy | Brasilidades. Página institucional oficial para contato por e-mail e futuras integrações com WhatsApp Business e IA." />
+<meta name="description" content="Página pessoal de referência: DJ Cagy (Brasilidades) e Luiz Cagy (Segurança da Informação). Contato e presença digital." />
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body{
@@ -12,108 +15,253 @@ font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 background:#07070A; color:#F5F5F7; line-height:1.6;
 }
 .wrap{ max-width: 980px; margin: 0 auto; padding: 22px 18px 60px; }
+
 header{
-display:flex; align-items:center; justify-content:space-between;
-padding: 10px 0 18px;
-border-bottom: 1px solid rgba(255,255,255,.10);
-gap: 12px; flex-wrap: wrap;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 10px 0 18px;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+  gap: 12px; flex-wrap: wrap;
 }
 .brand{ display:flex; flex-direction:column; gap:4px; }
 .brand .name{
-font-weight: 800; letter-spacing: .08em;
-text-transform: uppercase; font-size: 14px;
+  font-weight: 900; letter-spacing: .10em;
+  text-transform: uppercase; font-size: 14px;
 }
 .brand .tag{ font-size: 12px; opacity: .75; }
+
 nav a{
-color:#F5F5F7; text-decoration:none; font-size: 13px;
-margin-left: 14px; opacity: .82;
+  color:#F5F5F7; text-decoration:none; font-size: 13px;
+  margin-left: 14px; opacity: .82;
 }
 nav a:hover{ opacity: 1; }
+
 .hero{ padding: 36px 0 10px; }
 .pill{
-display:inline-block; font-size: 11px; letter-spacing:.14em;
-text-transform: uppercase; opacity: .75;
-border: 1px solid rgba(255,255,255,.14);
-padding: 6px 10px; border-radius: 999px;
-margin-bottom: 14px;
+  display:inline-block; font-size: 11px; letter-spacing:.14em;
+  text-transform: uppercase; opacity: .78;
+  border: 1px solid rgba(255,255,255,.14);
+  padding: 6px 10px; border-radius: 999px;
+  margin-bottom: 14px;
 }
-h1{ font-size: 30px; line-height: 1.15; margin-bottom: 12px; }
-.subtitle{ max-width: 640px; opacity: .85; font-size: 15px; }
-.cta{ display:flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+h1{ font-size: 30px; line-height: 1.15; margin-bottom: 10px; }
+.subtitle{ max-width: 760px; opacity: .86; font-size: 15px; }
+
+.cta{ display:flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
 .btn{
-display:inline-block; padding: 10px 16px; border-radius: 999px;
-text-decoration:none; font-size: 14px; border: 1px solid rgba(255,255,255,.16);
-color:#F5F5F7; background: transparent;
-transition: transform .10s ease, box-shadow .15s ease, opacity .15s ease;
+  display:inline-block; padding: 10px 16px; border-radius: 999px;
+  text-decoration:none; font-size: 14px; border: 1px solid rgba(255,255,255,.16);
+  color:#F5F5F7; background: transparent;
+  transition: transform .10s ease, box-shadow .15s ease, opacity .15s ease, background .15s ease;
 }
 .btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
-.btn-wa{
-background:#25D366; border-color:#25D366; color:#06140B; font-weight: 700;
+.btn-primary{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.18);
+  font-weight: 700;
 }
+
 .section{
-margin-top: 28px; padding-top: 20px;
-border-top: 1px solid rgba(255,255,255,.10);
+  margin-top: 28px; padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.10);
 }
 .section h2{ font-size: 16px; margin-bottom: 10px; }
 .section p, .section li{ font-size: 14px; opacity: .86; }
+
 ul{ margin-left: 18px; margin-top: 8px; }
+
 .box{
-margin-top: 10px;
-border: 1px solid rgba(255,255,255,.10);
-background: rgba(255,255,255,.03);
-border-radius: 14px;
-padding: 14px;
+  margin-top: 10px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  border-radius: 14px;
+  padding: 14px;
 }
-footer{
-margin-top: 28px; padding-top: 18px;
-border-top: 1px solid rgba(255,255,255,.10);
-opacity: .70; font-size: 12px;
-display:flex; justify-content:space-between; gap: 10px; flex-wrap: wrap;
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
 }
+.card{
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  border-radius: 16px;
+  padding: 14px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 160px;
+}
+.card .kicker{
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .78;
+}
+.card .title{
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: -4px;
+}
+.card .desc{
+  font-size: 13px;
+  opacity: .84;
+  max-width: 520px;
+}
+.card .actions{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2px;
+}
+.btn-dj{
+  border-color: rgba(37, 211, 102, .35);
+  background: rgba(37, 211, 102, .10);
+}
+.btn-sec{
+  border-color: rgba(99, 102, 241, .35);
+  background: rgba(99, 102, 241, .10);
+}
+
 .muted{ opacity:.75; }
-@media (max-width: 720px){
-h1{ font-size: 24px; }
-nav a{ margin-left: 0; margin-right: 12px; }
+
+footer{
+  margin-top: 28px; padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.10);
+  opacity: .70; font-size: 12px;
+  display:flex; justify-content:space-between; gap: 10px; flex-wrap: wrap;
 }
+
+a{ color: #F5F5F7; }
+a.link{ text-decoration: underline; text-underline-offset: 3px; opacity: .9; }
+a.link:hover{ opacity: 1; }
+
+@media (max-width: 820px){
+  .grid{ grid-template-columns: 1fr; }
+}
+@media (max-width: 720px){
+  h1{ font-size: 24px; }
+  nav a{ margin-left: 0; margin-right: 12px; }
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
 <div class="brand">
-<div class="name">DJ Cagy</div>
-<div class="tag">Brasilidades</div>
+<div class="name">Cagy</div>
+<div class="tag">DJ • Brasilidades • Segurança da Informação</div>
 </div>
 <nav>
-<a href="#sobre">Sobre</a>
+<a href="#inicio">Início</a>
+<a href="#dj">DJ Cagy</a>
+<a href="#luiz">Luiz Cagy</a>
 <a href="#contato">Contato</a>
-<a href="#links">Links</a>
 </nav>
 </header>
 
-<main>
+<main id="inicio">
   <section class="hero">
-    <div class="pill">Site institucional</div>
-    <h1>DJ Cagy</h1>
+    <div class="pill">Página de referência pessoal</div>
+    <h1>DJ Cagy & Luiz Cagy</h1>
     <p class="subtitle">
-      Página oficial para contato e presença digital. Em breve, atendimento integrado com IA e WhatsApp Business para orçamentos e bookings.
+      Um hub simples e funcional para centralizar minhas duas frentes: música (DJ Cagy — Brasilidades) e tecnologia (Luiz Cagy — Segurança da Informação).
     </p>
+
+    <div class="grid" aria-label="Atalhos principais">
+      <div class="card">
+        <div class="kicker">Música</div>
+        <div class="title">DJ Cagy — Brasilidades</div>
+        <div class="desc">
+          Sets com identidade brasileira, energia de pista e curadoria com foco em brasilidades.
+          Base para bookings e integrações futuras com atendimento via IA.
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary btn-dj" href="#dj">Ver seção DJ</a>
+          <a class="btn" href="mailto:dj@cagy.com.br">E-mail DJ</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="kicker">Tecnologia</div>
+        <div class="title">Luiz Cagy — Segurança da Informação</div>
+        <div class="desc">
+          Segurança, automação e boas práticas. Seção voltada para presença profissional, serviços e referências.
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary btn-sec" href="#luiz">Ver seção Segurança</a>
+          <a class="btn" href="mailto:dj@cagy.com.br">Contato</a>
+        </div>
+      </div>
+    </div>
+
     <div class="cta">
-      <a class="btn btn-wa" href="#" target="_blank" rel="noopener noreferrer">
-        Atendimento em breve
-      </a>
-      <a class="btn" href="#contato">Ver e-mail de contato</a>
+      <a class="btn" href="#contato">Ver contatos</a>
+      <a class="btn" href="#links">Atualizar links</a>
     </div>
   </section>
 
-  <section id="sobre" class="section">
-    <h2>Sobre</h2>
+  <section id="dj" class="section">
+    <h2>DJ Cagy — Brasilidades</h2>
     <div class="box">
       <p>
-        DJ Cagy — Brasilidades. Uma proposta voltada às sonoridades brasileiras, misturando clássicos e novas referências em sets pensados para pista.
+        Projeto musical com foco em brasilidades, misturando referências clássicas e novas sonoridades em sets pensados para pista.
       </p>
-      <p style="margin-top:8px;">
-        Este site tem caráter institucional, servindo como ponto oficial de referência, contato por e-mail e base para integrações futuras com WhatsApp Business e automações com IA.
+
+      <p style="margin-top:10px;">
+        <strong>Para bookings:</strong> por enquanto, contato por e-mail. Em breve, atendimento integrado com IA e WhatsApp Business.
+      </p>
+
+      <ul>
+        <li><strong>Contato:</strong> <a class="link" href="mailto:dj@cagy.com.br">dj@cagy.com.br</a></li>
+        <li><strong>Base:</strong> Rio de Janeiro - RJ</li>
+        <li><strong>Status WhatsApp/IA:</strong> em implementação (sem expor número publicamente)</li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-top:12px;">
+      <p class="muted"><strong>Links (adicione quando quiser):</strong></p>
+      <ul>
+        <li>Instagram</li>
+        <li>SoundCloud / Mixcloud</li>
+        <li>Spotify</li>
+        <li>YouTube</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="luiz" class="section">
+    <h2>Luiz Cagy — Segurança da Informação</h2>
+    <div class="box">
+      <p>
+        Área profissional voltada para Segurança da Informação, automação e boas práticas de tecnologia.
+        Esta seção serve como ponto de referência para networking, projetos e contatos.
+      </p>
+
+      <ul style="margin-top:10px;">
+        <li><strong>Atuação:</strong> Segurança da Informação</li>
+        <li><strong>Base:</strong> Rio de Janeiro - RJ</li>
+        <li><strong>Contato:</strong> <a class="link" href="mailto:dj@cagy.com.br">dj@cagy.com.br</a> <span class="muted">(se quiser, troco por um e-mail específico tipo luiz@cagy.com.br)</span></li>
+      </ul>
+    </div>
+
+    <div class="box" style="margin-top:12px;">
+      <p class="muted"><strong>Links profissionais (adicione quando quiser):</strong></p>
+      <ul>
+        <li>LinkedIn</li>
+        <li>GitHub</li>
+        <li>Currículo (PDF) ou portfólio</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="links" class="section">
+    <h2>Links (atalhos)</h2>
+    <div class="box">
+      <p class="muted">
+        Se você me passar seus links (Instagram, SoundCloud, LinkedIn, etc.), eu deixo tudo clicável e organizado aqui.
       </p>
     </div>
   </section>
@@ -122,48 +270,29 @@ nav a{ margin-left: 0; margin-right: 12px; }
     <h2>Contato</h2>
     <div class="box">
       <ul>
-        <li>
-          <strong>E-mail:</strong>
-          <a href="mailto:dj@cagy.com.br">dj@cagy.com.br</a>
-        </li>
-        <li>
-          <strong>WhatsApp / Atendimento:</strong>
-          <span class="muted">
-            em breve, atendimento automatizado via IA integrado ao WhatsApp Business.
-          </span>
-        </li>
-        <li>
-          <strong>Site oficial:</strong> cagy.com.br
-        </li>
-        <li>
-          <strong>Cidade:</strong> Rio de Janeiro - RJ
-        </li>
+        <li><strong>E-mail (geral):</strong> <a class="link" href="mailto:dj@cagy.com.br">dj@cagy.com.br</a></li>
+        <li><strong>Site:</strong> cagy.com.br</li>
+        <li><strong>Cidade:</strong> Rio de Janeiro - RJ</li>
       </ul>
-    </div>
-  </section>
-
-  <section id="links" class="section">
-    <h2>Links</h2>
-    <div class="box">
-      <p class="muted">Quando quiser, podemos adicionar aqui:</p>
-      <ul>
-        <li>Instagram oficial</li>
-        <li>SoundCloud / Mixcloud</li>
-        <li>Spotify (perfil de artista ou playlists)</li>
-        <li>YouTube</li>
-      </ul>
+      <p style="margin-top:10px;" class="muted">
+        Observação: por privacidade, o número de WhatsApp não é exibido publicamente. A integração com atendimento via IA/WhatsApp será adicionada depois.
+      </p>
     </div>
   </section>
 </main>
 
 <footer>
-  <span>© <span id="y"></span> DJ Cagy</span>
+  <span>© <span id="y"></span> Cagy</span>
   <span class="muted">Rio de Janeiro - RJ • Brasil</span>
 </footer>
 
 </div>
+
 <script>
 document.getElementById('y').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
+============================================================
+FIM DO ARQUIVO – index.html
+============================================================
